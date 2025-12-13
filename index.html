@@ -158,6 +158,73 @@
 			    border: 6px solid #fff; 
 			    box-shadow: 0 10px 30px rgba(0,0,0,0.15); 
 			}
+
+			/* =========================================
+               SMOOTH SCROLLING ANIMATION
+               ========================================= */
+
+            /* This creates a "Landing Zone" for mobile */
+            @media screen and (max-width: 736px) {
+                html {
+                    /* Since your bar is 50px tall, we stop scrolling 
+                       55px early so the title isn't hidden behind the bar */
+                    scroll-padding-top: 55px; 
+                }
+            }
+
+			/* =========================================
+               FINAL MOBILE NAV (With Animation Fix)
+               ========================================= */
+            
+            #mobile-nav-bar { display: none; }
+
+            @media screen and (max-width: 736px) {
+                
+                /* 1. ENABLE SMOOTH SCROLL (Mobile Only) */
+                html {
+                    scroll-behavior: smooth;   /* CSS handles scroll on phone */
+                    scroll-padding-top: 55px;  /* Stops before hitting the bar */
+                }
+
+                /* 2. Hide Desktop Nav */
+                #nav { display: none !important; }
+
+                /* 3. Show Mobile Nav */
+                #mobile-nav-bar {
+                    display: flex !important;
+                    justify-content: space-around;
+                    align-items: center;
+                    
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 50px;
+                    
+                    background: #ffffff;
+                    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+                    z-index: 10000;
+                    border-bottom: 1px solid #eee;
+                }
+
+                #mobile-nav-bar a {
+                    text-decoration: none;
+                    color: #444;
+                    font-weight: 700;
+                    font-size: 0.9em;
+                    padding: 10px;
+                    border: none;
+                }
+
+                /* Active State Style */
+                #mobile-nav-bar a.active {
+                    background-color: #f3f4f6;
+                    color: #4f46e5;
+                    border-radius: 8px;
+                }
+                
+                #titleBar, .navPanelToggle { display: none !important; }
+            }
 		</style>
 	</head>
 	<body class="is-preload">
@@ -354,6 +421,13 @@
 					</footer>
 
 			</div>
+
+			<nav id="mobile-nav-bar">
+        		<a href="#intro">About</a>
+        		<a href="#first">Projects</a>
+        		<a href="#second">Skills</a>
+        		<a href="#cta">Resume</a>
+    		</nav>
 
 			<!-- SCRIPTS -->
 			<script src="assets/js/jquery.min.js"></script>
