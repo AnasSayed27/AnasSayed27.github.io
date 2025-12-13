@@ -1,177 +1,361 @@
 <!DOCTYPE HTML>
-<!--
-	Stellar by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 	<head>
-		<title>Stellar by HTML5 UP</title>
+		<title>Anas Sayed | AI Engineer</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		
+		<style>
+			/* =========================================
+			   CUSTOM STYLES FOR ANAS PORTFOLIO
+			   ========================================= */
+
+			/* --- 1. PROJECT IMAGES FIX --- */
+			.features .image img {
+				width: 100%;
+				height: 230px; /* Uniform height */
+				object-fit: cover; /* Crops nicely */
+				object-position: top center; /* Focuses on top of image */
+				border-radius: 6px;
+				border: 1px solid rgba(0,0,0,0.05);
+				transition: transform 0.3s ease;
+			}
+            /* Hover Zoom Effect */
+            .features li:hover .image img {
+                transform: scale(1.02);
+            }
+
+			/* --- 2. PROJECT CARD & BUTTON ALIGNMENT FIX --- */
+			/* Ensures buttons are always centered and pushed to bottom */
+			.features li {
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between; /* Pushes footer to bottom */
+				align-items: center;
+			}
+			.features li footer {
+				margin-top: auto;
+				width: 100%;
+				display: flex;
+				justify-content: center;
+			}
+			.features .actions.special {
+				width: 100%;
+				justify-content: center;
+				margin-bottom: 0;
+			}
+
+			/* --- 3. SOCIAL ICONS ANIMATION (About Section) --- */
+			.social-icons-about { 
+			    list-style: none; 
+			    padding: 0; 
+			    margin-top: 2em; 
+			    display: flex; 
+			    gap: 20px; 
+			    justify-content: flex-start; 
+			}
+
+			@media screen and (max-width: 736px) {
+			    .social-icons-about {
+			        justify-content: center;
+			    }
+			}
+			.social-icons-about a { 
+			    font-size: 2em; 
+			    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+			    display: inline-block;
+			    text-decoration: none;
+			    border-bottom: none;
+			}
+            
+            /* Brand Colors on Hover */
+            .social-icons-about a.fa-linkedin:hover { color: #0077b5 !important; transform: scale(1.3); }
+            .social-icons-about a.fa-github:hover { color: #333 !important; transform: scale(1.3); }
+            .social-icons-about a.fa-twitter:hover { color: #000 !important; transform: scale(1.3); }
+            .social-icons-about a.fa-envelope:hover { color: #ea4335 !important; transform: scale(1.3); }
+            .social-icons-about a { color: #888; }
+
+			/* --- 4. CTA BUTTONS (Resume & LinkedIn) --- */
+            /* Resume Button (Indigo) */
+            #cta .button.primary {
+                background-color: #4f46e5 !important; 
+                color: #ffffff !important;
+                border: none;
+                font-weight: 700;
+                box-shadow: 0 4px 14px rgba(79, 70, 229, 0.4);
+                transition: all 0.3s ease;
+            }
+            #cta .button.primary:hover {
+                background-color: #3730a3 !important; 
+                transform: translateY(-3px);
+                box-shadow: 0 6px 20px rgba(79, 70, 229, 0.6);
+            }
+
+            /* LinkedIn Button (Official Blue) */
+            #cta .button.linkedin-btn {
+                background-color: #0077b5 !important;
+                color: #ffffff !important;
+                border: none;
+                font-weight: 700;
+                box-shadow: 0 4px 14px rgba(0, 119, 181, 0.4);
+                transition: all 0.3s ease;
+            }
+            #cta .button.linkedin-btn:hover {
+                background-color: #005582 !important;
+                transform: translateY(-3px);
+                box-shadow: 0 6px 20px rgba(0, 119, 181, 0.6);
+            }
+			/* FIX: Force LinkedIn Icon White */
+			#cta .button.linkedin-btn:before {
+			    color: #ffffff !important;
+			    opacity: 1 !important;
+			}
+
+			/* --- 5. PILL BAR --- */
+			.pill-bar {
+			    display: inline-flex;       
+			    justify-content: center;
+			    align-items: center;
+			    gap: 30px;                  
+			    margin-top: 35px;
+			    padding: 15px 40px;         
+			    background: #ffffff;        
+			    border-radius: 50px;        
+			    box-shadow: 0 10px 25px rgba(0,0,0,0.2); 
+			    max-width: 95%;             
+			    flex-wrap: wrap;            
+			}
+			.pill-item { display: flex; align-items: center; gap: 12px; text-align: left; }
+			.pill-icon { font-size: 2em; display: flex; align-items: center; }
+			.pill-text { display: flex; flex-direction: column; line-height: 1.1; }
+			.pill-count { font-weight: 800; font-size: 1.4em; color: #222222; }
+			.pill-label { font-size: 0.75em; color: #666666; text-transform: uppercase; letter-spacing: 0.5px; font-weight: 700; }
+			@media screen and (max-width: 736px) {
+			    .pill-bar { border-radius: 20px; padding: 20px; gap: 20px; width: 90%; }
+			    .pill-item { width: 45%; justify-content: center; }
+			}
+
+			/* --- 6. TYPOGRAPHY --- */
+			#header h1 { 
+				color: #ffffff !important; font-weight: 900; letter-spacing: -1px; font-size: 3.8em; 
+				margin-bottom: 10px; text-shadow: 0 4px 10px rgba(0,0,0,0.3);
+			}
+			#header .role-title { color: #ffffff !important; font-weight: 600; font-size: 1.4em; margin-bottom: 5px; opacity: 1; }
+			#header .role-desc { color: #e0e0e0 !important; font-weight: 300; font-size: 1.1em; opacity: 0.9; letter-spacing: 0.5px; }
+			h2, h3 { color: #1a1a1a !important; font-weight: 800; }
+			p, li { color: #333333 !important; font-weight: 500; line-height: 1.8; }
+			
+			/* Profile Image */
+			.spotlight .image img { 
+			    width: 280px;
+			    height: 280px;
+			    max-width: 80vw;
+			    aspect-ratio: 1 / 1;
+			    object-fit: cover;
+			    border-radius: 50%;
+			    border: 6px solid #fff; 
+			    box-shadow: 0 10px 30px rgba(0,0,0,0.15); 
+			}
+		</style>
 	</head>
 	<body class="is-preload">
 
-		<!-- Wrapper -->
 			<div id="wrapper">
 
-				<!-- Header -->
+					<!-- HEADER -->
 					<header id="header" class="alt">
-						<span class="logo"><img src="images/logo.svg" alt="" /></span>
-						<h1>Stellar</h1>
-						<p>Just another free, fully responsive site template<br />
-						built by <a href="https://twitter.com/ajlkn">@ajlkn</a> for <a href="https://html5up.net">HTML5 UP</a>.</p>
+						<span class="logo"><span class="icon solid fa-robot"></span></span>
+						<h1>ANAS SAYED</h1>
+						
+						<p class="role-title">AI Engineer & Agentic Systems Builder</p>
+						<p class="role-desc">Building autonomous crews, RAG engines, and production-grade ML apps.</p>
+						
+						<div class="pill-bar">
+					    <div class="pill-item">
+					        <span class="icon solid fa-robot pill-icon" style="color: #6366f1;"></span>
+					        <div class="pill-text"><span class="pill-count">1</span><span class="pill-label">Agent Swarm</span></div>
+					    </div>
+					    <div class="pill-item">
+					        <span class="icon solid fa-database pill-icon" style="color: #10b981;"></span>
+					        <div class="pill-text"><span class="pill-count">1</span><span class="pill-label">RAG Engine</span></div>
+					    </div>
+					    <div class="pill-item">
+					        <span class="icon solid fa-brain pill-icon" style="color: #f59e0b;"></span>
+					        <div class="pill-text"><span class="pill-count">2</span><span class="pill-label">ML Models</span></div>
+					    </div>
+					    <div class="pill-item">
+					        <span class="icon solid fa-eye pill-icon" style="color: #ef4444;"></span>
+					        <div class="pill-text"><span class="pill-count">1</span><span class="pill-label">Computer Vision</span></div>
+					    </div>
+					</div>
 					</header>
 
-				<!-- Nav -->
+					<!-- NAV -->
 					<nav id="nav">
 						<ul>
-							<li><a href="#intro" class="active">Introduction</a></li>
-							<li><a href="#first">First Section</a></li>
-							<li><a href="#second">Second Section</a></li>
-							<li><a href="#cta">Get Started</a></li>
+							<li><a href="#intro" class="active">About</a></li>
+							<li><a href="#first">Projects</a></li>
+							<li><a href="#second">Skills</a></li>
+							<li><a href="#cta">Resume</a></li>
 						</ul>
 					</nav>
 
-				<!-- Main -->
 					<div id="main">
 
-						<!-- Introduction -->
+							<!-- ABOUT SECTION -->
 							<section id="intro" class="main">
 								<div class="spotlight">
 									<div class="content">
 										<header class="major">
-											<h2>Ipsum sed adipiscing</h2>
+											<h2>About Me</h2>
 										</header>
-										<p>Sed lorem ipsum dolor sit amet nullam consequat feugiat consequat magna
-										adipiscing magna etiam amet veroeros. Lorem ipsum dolor tempus sit cursus.
-										Tempus nisl et nullam lorem ipsum dolor sit amet aliquam.</p>
-										<ul class="actions">
-											<li><a href="generic.html" class="button">Learn More</a></li>
+										<p>I am a <b>Computer Science Student</b> bridging the gap between research and production. While others stop at Jupyter Notebooks, I focus on engineering robust AI systems.</p>
+										<p>My work spans from architecting <b>Multi-Agent Swarms</b> (using CrewAI) that automate complex business workflows to building <b>Custom RAG Pipelines</b> from scratch using NumPy. I am currently building specialized AI agents for FinTech and Healthcare domains.</p>
+										
+										<!-- Social Icons with Pop-out Animation -->
+										<ul class="social-icons-about">
+											<li><a href="https://www.linkedin.com/in/soberhuman" target="_blank" rel="noopener noreferrer" class="icon brands fa-linkedin" title="LinkedIn"></a></li>
+											<li><a href="https://github.com/AnasSayed27" target="_blank" rel="noopener noreferrer" class="icon brands fa-github" title="GitHub"></a></li>
+											<li><a href="https://x.com/AnasBuilds_AI" target="_blank" rel="noopener noreferrer" class="icon brands fa-twitter" title="Twitter"></a></li>
+											<li><a href="mailto:soberbeing78@gmail.com" class="icon solid fa-envelope" title="Email"></a></li>
 										</ul>
 									</div>
-									<span class="image"><img src="images/pic01.jpg" alt="" /></span>
+									<span class="image"><img src="images/profile.jpg" alt="Anas Sayed" /></span>
 								</div>
 							</section>
 
-						<!-- First Section -->
+							<!-- PROJECTS SECTION -->
 							<section id="first" class="main special">
 								<header class="major">
-									<h2>Magna veroeros</h2>
+									<h2>Featured Projects</h2>
 								</header>
 								<ul class="features">
+									
+									<!-- Project 1: SubSlash -->
 									<li>
-										<span class="icon solid major style1 fa-code"></span>
-										<h3>Ipsum consequat</h3>
-										<p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
+										<span class="image"><img src="images/subslash.png" alt="SubSlash AI" /></span>
+										<h3>SubSlash AI: Agents</h3>
+										<p>Architected a hierarchical multi-agent system using <b>CrewAI</b> where 4 specialized AI agents collaborate asynchronously to plan and execute complex marketing campaigns. Implemented custom tools for web scraping and file management.</p>
+										<footer class="major">
+											<ul class="actions special">
+												<li><a href="https://github.com/AnasSayed27/AI-ML-Portfolio/tree/main/SubSlash-AI-Marketing-Agents" target="_blank" rel="noopener noreferrer" class="button small">View Architecture</a></li>
+											</ul>
+										</footer>
 									</li>
+
+									<!-- Project 2: DevDocs -->
 									<li>
-										<span class="icon major style3 fa-copy"></span>
-										<h3>Amed sed feugiat</h3>
-										<p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
+										<span class="image"><img src="images/devdocs.gif" alt="DevDocs AI" /></span>
+										<h3>DevDocs AI: RAG Engine</h3>
+										<p>Engineered a Retrieval-Augmented Generation (RAG) chatbot from scratch. Built the vector search logic using <b>NumPy</b> (no pre-built Vector DBs) to master semantic retrieval fundamentals. Achieved a ROUGE-L score of ~0.10.</p>
+										<footer class="major">
+											<ul class="actions special">
+												<li><a href="https://github.com/AnasSayed27/AI-ML-Portfolio/tree/main/DevDocs-AI-RAG-Chatbot" target="_blank" rel="noopener noreferrer" class="button small">View Code</a></li>
+											</ul>
+										</footer>
 									</li>
+
+									<!-- Project 3: Potato Classifier -->
 									<li>
-										<span class="icon major style5 fa-gem"></span>
-										<h3>Dolor nullam</h3>
-										<p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
+										<span class="image"><img src="images/potato.gif" alt="Potato App" /></span>
+										<h3>Potato Disease Classifier</h3>
+										<p>A full-stack Deep Learning app. Trained a CNN with <b>92.66% accuracy</b> and deployed it to production using <b>FastAPI</b>. The project showcases the complete MLOps lifecycle from training to real-time inference.</p>
+										<footer class="major">
+											<ul class="actions special">
+												<li><a href="https://github.com/AnasSayed27/AI-ML-Portfolio/tree/main/CNN-Potato-Disease-Classifier" target="_blank" rel="noopener noreferrer" class="button small">View Code</a></li>
+											</ul>
+										</footer>
+									</li>
+
+									<!-- Project 4: Churn Prediction -->
+									<li>
+										<span class="image"><img src="images/classifiation.png" alt="Churn Prediction" /></span>
+										<h3>Customer Churn Classifier</h3>
+										<p>An end-to-end classification pipeline achieving <b>81% accuracy</b> to identify at-risk customers. Focused on extensive EDA and feature engineering using Pandas and Scikit-Learn.</p>
+										<footer class="major">
+											<ul class="actions special">
+												<li><a href="https://github.com/AnasSayed27/AI-ML-Portfolio/tree/main/ClassificationProject(CustomerChurnPred)" target="_blank" rel="noopener noreferrer" class="button small">View Code</a></li>
+											</ul>
+										</footer>
+									</li>
+
+									<!-- Project 5: Car Price -->
+									<li>
+										<span class="image"><img src="images/regression.png" alt="Price Prediction" /></span>
+										<h3>Used Car Price Regressor</h3>
+										<p>A regression model predicting car valuations with an <b>R² of 0.69</b>. Implemented advanced data cleaning and Random Forest models to handle highly skewed datasets effectively.</p>
+										<footer class="major">
+											<ul class="actions special">
+												<li><a href="https://github.com/AnasSayed27/AI-ML-Portfolio/tree/main/RegressionProject(CarPricePred)" target="_blank" rel="noopener noreferrer" class="button small">View Code</a></li>
+											</ul>
+										</footer>
+									</li>
+
+									<!-- Project 6: Goals App -->
+									<li>
+										<span class="image"><img src="images/goals.jpg" alt="Goals App" /></span>
+										<h3>FullStack Goals App</h3>
+										<p>A mobile productivity app built with <b>React Native & Expo</b>. Features goal tracking, weekly breakdowns, and visualization. Prototyped using AI-driven development practices.</p>
+										<footer class="major">
+											<ul class="actions special">
+												<li><a href="https://github.com/AnasSayed27/GoalsApp" target="_blank" rel="noopener noreferrer" class="button small">View Code</a></li>
+											</ul>
+										</footer>
 									</li>
 								</ul>
-								<footer class="major">
-									<ul class="actions special">
-										<li><a href="generic.html" class="button">Learn More</a></li>
-									</ul>
-								</footer>
 							</section>
 
-						<!-- Second Section -->
+							<!-- SKILLS SECTION -->
 							<section id="second" class="main special">
 								<header class="major">
-									<h2>Ipsum consequat</h2>
-									<p>Donec imperdiet consequat consequat. Suspendisse feugiat congue<br />
-									posuere. Nulla massa urna, fermentum eget quam aliquet.</p>
+									<h2>Technical Arsenal</h2>
+									<p>I focus on tools that build production-ready software, not just experiments.</p>
 								</header>
 								<ul class="statistics">
-									<li class="style1">
-										<span class="icon solid fa-code-branch"></span>
-										<strong>5,120</strong> Etiam
-									</li>
-									<li class="style2">
-										<span class="icon fa-folder-open"></span>
-										<strong>8,192</strong> Magna
-									</li>
-									<li class="style3">
-										<span class="icon solid fa-signal"></span>
-										<strong>2,048</strong> Tempus
-									</li>
-									<li class="style4">
-										<span class="icon solid fa-laptop"></span>
-										<strong>4,096</strong> Aliquam
-									</li>
-									<li class="style5">
-										<span class="icon fa-gem"></span>
-										<strong>1,024</strong> Nullam
-									</li>
+									<li class="style1"><span class="icon solid fa-brain"></span><strong>AI/ML</strong> TensorFlow, Keras, RAG</li>
+									<li class="style2"><span class="icon solid fa-robot"></span><strong>Agents</strong> CrewAI, LangChain, LLMs</li>
+									<li class="style3"><span class="icon solid fa-code"></span><strong>Backend</strong> Python, FastAPI, SQL</li>
+									<li class="style4"><span class="icon solid fa-database"></span><strong>Data</strong> NumPy, Pandas, Vector DBs</li>
 								</ul>
-								<p class="content">Nam elementum nisl et mi a commodo porttitor. Morbi sit amet nisl eu arcu faucibus hendrerit vel a risus. Nam a orci mi, elementum ac arcu sit amet, fermentum pellentesque et purus. Integer maximus varius lorem, sed convallis diam accumsan sed. Etiam porttitor placerat sapien, sed eleifend a enim pulvinar faucibus semper quis ut arcu. Ut non nisl a mollis est efficitur vestibulum. Integer eget purus nec nulla mattis et accumsan ut magna libero. Morbi auctor iaculis porttitor. Sed ut magna ac risus et hendrerit scelerisque. Praesent eleifend lacus in lectus aliquam porta. Cras eu ornare dui curabitur lacinia.</p>
-								<footer class="major">
-									<ul class="actions special">
-										<li><a href="generic.html" class="button">Learn More</a></li>
-									</ul>
-								</footer>
 							</section>
 
-						<!-- Get Started -->
+							<!-- CTA / RESUME SECTION -->
 							<section id="cta" class="main special">
 								<header class="major">
-									<h2>Congue imperdiet</h2>
-									<p>Donec imperdiet consequat consequat. Suspendisse feugiat congue<br />
-									posuere. Nulla massa urna, fermentum eget quam aliquet.</p>
+									<h2>Ready to collaborate?</h2>
+									<p>I am currently open to AI/ML Engineering Internships.<br /> Check out my full CV below.</p>
 								</header>
 								<footer class="major">
 									<ul class="actions special">
-										<li><a href="generic.html" class="button primary">Get Started</a></li>
-										<li><a href="generic.html" class="button">Learn More</a></li>
+										<li><a href="assets/CV.pdf" target="_blank" rel="noopener noreferrer" class="button primary icon solid fa-download"> Download Resume</a></li>
+										<li><a href="https://www.linkedin.com/in/soberhuman" target="_blank" rel="noopener noreferrer" class="button linkedin-btn icon brands fa-linkedin"> LinkedIn</a></li>
 									</ul>
 								</footer>
 							</section>
 
 					</div>
 
-				<!-- Footer -->
+					<!-- FOOTER -->
 					<footer id="footer">
 						<section>
-							<h2>Aliquam sed mauris</h2>
-							<p>Sed lorem ipsum dolor sit amet et nullam consequat feugiat consequat magna adipiscing tempus etiam dolore veroeros. eget dapibus mauris. Cras aliquet, nisl ut viverra sollicitudin, ligula erat egestas velit, vitae tincidunt odio.</p>
-							<ul class="actions">
-								<li><a href="generic.html" class="button">Learn More</a></li>
-							</ul>
+							<h2>Contact Details</h2>
+							<dl class="alt">
+								<dt>Location</dt><dd>Mumbai, India</dd>
+								<dt>Email</dt><dd><a href="mailto:soberbeing78@gmail.com">soberbeing78@gmail.com</a></dd>
+							</dl>
 						</section>
 						<section>
-							<h2>Etiam feugiat</h2>
-							<dl class="alt">
-								<dt>Address</dt>
-								<dd>1234 Somewhere Road &bull; Nashville, TN 00000 &bull; USA</dd>
-								<dt>Phone</dt>
-								<dd>(000) 000-0000 x 0000</dd>
-								<dt>Email</dt>
-								<dd><a href="#">information@untitled.tld</a></dd>
-							</dl>
-							<ul class="icons">
-								<li><a href="#" class="icon brands fa-twitter alt"><span class="label">Twitter</span></a></li>
-								<li><a href="#" class="icon brands fa-facebook-f alt"><span class="label">Facebook</span></a></li>
-								<li><a href="#" class="icon brands fa-instagram alt"><span class="label">Instagram</span></a></li>
-								<li><a href="#" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
-								<li><a href="#" class="icon brands fa-dribbble alt"><span class="label">Dribbble</span></a></li>
-							</ul>
+							<h2>About This Site</h2>
+							<p>This portfolio is a showcase of my journey in AI Engineering. Built with HTML5, CSS3, and hosted on GitHub Pages.</p>
 						</section>
-						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+						<p class="copyright">&copy; Anas Sayed.</p>
 					</footer>
 
 			</div>
 
-		<!-- Scripts -->
+			<!-- SCRIPTS -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
