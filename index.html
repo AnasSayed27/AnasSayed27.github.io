@@ -173,6 +173,22 @@
             }
 
 			/* =========================================
+               FIX: FASTER HEADER ANIMATION (INSTANT START)
+               ========================================= */
+            
+            /* 1. Target EVERYTHING inside the header */
+            #header, 
+            #header * {
+                /* Remove the "waiting period" completely */
+                animation-delay: 0s !important; 
+                transition-delay: 0s !important;
+                
+                /* Keep the speed fast (as you liked it) */
+                animation-duration: 2s !important; 
+                transition-duration: 2s !important;
+            }
+
+			/* =========================================
                FINAL MOBILE NAV (With Animation Fix)
                ========================================= */
             
