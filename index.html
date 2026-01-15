@@ -279,34 +279,36 @@
             }
 		</style>
 	</head>
+<!-- ... (Keep your <head> and <style> sections exactly as they are) ... -->
+
 	<body class="is-preload">
 
 			<div id="wrapper">
 
 					<!-- HEADER -->
 					<header id="header" class="alt">
-						<span class="logo"><span class="icon solid fa-robot"></span></span>
+						<span class="logo"><span class="icon solid fa-chart-line"></span></span>
 						<h1>ANAS SAYED</h1>
 						
-						<p class="role-title">AI Engineer & Agentic Systems Builder</p>
-						<p class="role-desc">Building autonomous crews, RAG engines, and production-grade ML apps.</p>
+						<p class="role-title">AI Engineer | FinTech & Decision Systems Specialist</p>
+						<p class="role-desc">Building explainable risk engines, autonomous agents, and production-grade financial AI.</p>
 						
 						<div class="pill-bar">
 					    <div class="pill-item">
-					        <span class="icon solid fa-robot pill-icon" style="color: #6366f1;"></span>
+					        <span class="icon solid fa-shield-alt pill-icon" style="color: #6366f1;"></span>
+					        <div class="pill-text"><span class="pill-count">1</span><span class="pill-label">Risk Engine</span></div>
+					    </div>
+					    <div class="pill-item">
+					        <span class="icon solid fa-robot pill-icon" style="color: #10b981;"></span>
 					        <div class="pill-text"><span class="pill-count">1</span><span class="pill-label">Agent Swarm</span></div>
 					    </div>
 					    <div class="pill-item">
-					        <span class="icon solid fa-database pill-icon" style="color: #10b981;"></span>
+					        <span class="icon solid fa-database pill-icon" style="color: #f59e0b;"></span>
 					        <div class="pill-text"><span class="pill-count">1</span><span class="pill-label">RAG Engine</span></div>
 					    </div>
 					    <div class="pill-item">
-					        <span class="icon solid fa-brain pill-icon" style="color: #f59e0b;"></span>
-					        <div class="pill-text"><span class="pill-count">2</span><span class="pill-label">ML Models</span></div>
-					    </div>
-					    <div class="pill-item">
-					        <span class="icon solid fa-eye pill-icon" style="color: #ef4444;"></span>
-					        <div class="pill-text"><span class="pill-count">1</span><span class="pill-label">Computer Vision</span></div>
+					        <span class="icon solid fa-microchip pill-icon" style="color: #ef4444;"></span>
+					        <div class="pill-text"><span class="pill-count">3</span><span class="pill-label">Deployments</span></div>
 					    </div>
 					</div>
 					</header>
@@ -330,10 +332,9 @@
 										<header class="major">
 											<h2>About Me</h2>
 										</header>
-										<p>I am a <b>Computer Science Student</b> bridging the gap between research and production. While others stop at Jupyter Notebooks, I focus on engineering robust AI systems.</p>
-										<p>My work spans from architecting <b>Multi-Agent Swarms</b> (using CrewAI) that automate complex business workflows to building <b>Custom RAG Pipelines</b> from scratch using NumPy. I am currently building specialized AI agents for FinTech and Healthcare domains.</p>
+										<p>I am a <b>Computer Science Student</b> specializing in <b>Decision Intelligence</b>. I bridge the gap between complex AI research and high-stakes production environments.</p>
+										<p>My expertise lies in a "Perfect Blend" of two worlds: architecting <b>Autonomous Agent Swarms</b> for complex workflows and engineering <b>Explainable FinTech Engines</b> that prioritize regulatory compliance (RegTech) and capital protection. I build the architecture that allows models to solve real-world economic problems.</p>
 										
-										<!-- Social Icons with Pop-out Animation -->
 										<ul class="social-icons-about">
 											<li><a href="https://www.linkedin.com/in/soberhuman" target="_blank" rel="noopener noreferrer" class="icon brands fa-linkedin" title="LinkedIn"></a></li>
 											<li><a href="https://github.com/AnasSayed27" target="_blank" rel="noopener noreferrer" class="icon brands fa-github" title="GitHub"></a></li>
@@ -352,74 +353,66 @@
 								</header>
 								<ul class="features">
 									
-									<!-- Project 1: SubSlash -->
+									<!-- FLAGSHIP PROJECT: Credit Risk -->
+									<li>
+										<span class="image"><img src="images\AI-Finance_Dashboard.png" alt="Credit Risk Engine" /></span>
+										<h3>Enterprise Credit Risk Engine</h3>
+										<p>Built a <b>production-grade classifier</b> using the <b>Kaggle Credit dataset</b>. Used a <b>"Parsimonious 5"</b> model, deployed via <b>Dockerized FastAPI</b> for sub-100ms real-time inference.</p>
+											<ul class="actions special">
+												<li><a href="https://github.com/AnasSayed27/AI-Finance-Enterprise" target="_blank" rel="noopener noreferrer" class="button small">View White Paper</a></li>
+											</ul>
+										</footer>
+									</li>
+
+									<!-- Project 2: SubSlash -->
 									<li>
 										<span class="image"><img src="images/subslash.png" alt="SubSlash AI" /></span>
-										<h3>SubSlash AI: Agents</h3>
-										<p>Architected a hierarchical multi-agent system using <b>CrewAI</b> where 4 specialized AI agents collaborate asynchronously to plan and execute complex marketing campaigns. Implemented custom tools for web scraping and file management.</p>
-										<footer class="major">
+										<h3>SubSlash AI: Agent Swarm</h3>
+										<p>Architected a <b>multi-agent swarm</b> using <b>CrewAI</b>. Orchestrated 4 agents for <b>autonomous market research</b>, demonstrating high-level <b>agentic orchestration</b> and task automation without human intervention.</p>										<footer class="major">
 											<ul class="actions special">
 												<li><a href="https://github.com/AnasSayed27/AI-ML-Portfolio/tree/main/SubSlash-AI-Marketing-Agents" target="_blank" rel="noopener noreferrer" class="button small">View Architecture</a></li>
 											</ul>
 										</footer>
 									</li>
 
-									<!-- Project 2: DevDocs -->
+									<!-- Project 3: DevDocs -->
 									<li>
 										<span class="image"><img src="images/devdocs.gif" alt="DevDocs AI" /></span>
 										<h3>DevDocs AI: RAG Engine</h3>
-										<p>Engineered a Retrieval-Augmented Generation (RAG) chatbot from scratch. Built the vector search logic using <b>NumPy</b> (no pre-built Vector DBs) to master semantic retrieval fundamentals. Achieved a ROUGE-L score of ~0.10.</p>
-										<footer class="major">
+										<p>Engineered a <b>RAG system</b> from scratch using <b>NumPy</b> for vector search logic. Mastered <b>semantic retrieval</b> fundamentals to transform technical documentation into actionable, <b>context-aware AI insights</b>.</p>										<footer class="major">
 											<ul class="actions special">
 												<li><a href="https://github.com/AnasSayed27/AI-ML-Portfolio/tree/main/DevDocs-AI-RAG-Chatbot" target="_blank" rel="noopener noreferrer" class="button small">View Code</a></li>
 											</ul>
 										</footer>
 									</li>
 
-									<!-- Project 3: Potato Classifier -->
+									<!-- Project 4: Portfolio Optimizer -->
 									<li>
-										<span class="image"><img src="images/potato.gif" alt="Potato App" /></span>
-										<h3>Potato Disease Classifier</h3>
-										<p>A full-stack Deep Learning app. Trained a CNN with <b>92.66% accuracy</b> and deployed it to production using <b>FastAPI</b>. The project showcases the complete MLOps lifecycle from training to real-time inference.</p>
-										<footer class="major">
+										<span class="image"><img src="images\Project2B.png" alt="Portfolio Optimizer" /></span>
+										<h3>Quant Backtesting Framework</h3>
+										<p>Developed a <b>Walk-Forward Validation</b> framework for NIFTY assets. Integrated <b>PyPortfolioOpt</b> while accounting for <b>0.1% transaction friction</b> to ensure high <b>backtest integrity</b> and eliminate bias.</p>											<ul class="actions special">
+												<li><a href="https://github.com/AnasSayed27/AI-Finance-Enterprise" class="button small">View Logic</a></li>
+											</ul>
+										</footer>
+									</li>
+
+									<!-- Project 5: Potato (MLOps Focus) -->
+									<li>
+										<span class="image"><img src="images/potato.gif" alt="MLOps Pipeline" /></span>
+										<h3>MLOps Inference Pipeline</h3>
+										<p>A <b>Deep Learning MLOps</b> showcase: trained a CNN to <b>92% accuracy</b> and deployed via <b>FastAPI</b>. Focused on <b>Pydantic validation</b> and containerized serving for stable, real-time production inference.</p>										<footer class="major">
 											<ul class="actions special">
 												<li><a href="https://github.com/AnasSayed27/AI-ML-Portfolio/tree/main/CNN-Potato-Disease-Classifier" target="_blank" rel="noopener noreferrer" class="button small">View Code</a></li>
 											</ul>
 										</footer>
 									</li>
 
-									<!-- Project 4: Churn Prediction -->
+									<!-- Project 6: Regime Detector -->
 									<li>
-										<span class="image"><img src="images/classifiation.png" alt="Churn Prediction" /></span>
-										<h3>Customer Churn Classifier</h3>
-										<p>An end-to-end classification pipeline achieving <b>81% accuracy</b> to identify at-risk customers. Focused on extensive EDA and feature engineering using Pandas and Scikit-Learn.</p>
-										<footer class="major">
-											<ul class="actions special">
-												<li><a href="https://github.com/AnasSayed27/AI-ML-Portfolio/tree/main/ClassificationProject(CustomerChurnPred)" target="_blank" rel="noopener noreferrer" class="button small">View Code</a></li>
-											</ul>
-										</footer>
-									</li>
-
-									<!-- Project 5: Car Price -->
-									<li>
-										<span class="image"><img src="images/regression.png" alt="Price Prediction" /></span>
-										<h3>Used Car Price Regressor</h3>
-										<p>A regression model predicting car valuations with an <b>R² of 0.69</b>. Implemented advanced data cleaning and Random Forest models to handle highly skewed datasets effectively.</p>
-										<footer class="major">
-											<ul class="actions special">
-												<li><a href="https://github.com/AnasSayed27/AI-ML-Portfolio/tree/main/RegressionProject(CarPricePred)" target="_blank" rel="noopener noreferrer" class="button small">View Code</a></li>
-											</ul>
-										</footer>
-									</li>
-
-									<!-- Project 6: Goals App -->
-									<li>
-										<span class="image"><img src="images/goals.jpg" alt="Goals App" /></span>
-										<h3>FullStack Goals App</h3>
-										<p>A mobile productivity app built with <b>React Native & Expo</b>. Features goal tracking, weekly breakdowns, and visualization. Prototyped using AI-driven development practices.</p>
-										<footer class="major">
-											<ul class="actions special">
-												<li><a href="https://github.com/AnasSayed27/GoalsApp" target="_blank" rel="noopener noreferrer" class="button small">View Code</a></li>
+										<span class="image"><img src="images\Project2C.png" alt="Regime Detection" /></span>
+										<h3>Market Intelligence Scanner</h3>
+										<p>Combined <b>K-Means Clustering</b> for <b>Market Regime detection</b> with <b>FinBERT</b> sentiment scoring. Identified "Panic" regimes and sentiment divergence to drive <b>Contextual AI</b> decision-making in finance.</p>											<ul class="actions special">
+												<li><a href="https://github.com/AnasSayed27/AI-Finance-Enterprise" class="button small">View Analysis</a></li>
 											</ul>
 										</footer>
 									</li>
@@ -433,10 +426,10 @@
 									<p>I focus on tools that build production-ready software, not just experiments.</p>
 								</header>
 								<ul class="statistics">
-									<li class="style1"><span class="icon solid fa-brain"></span><strong>AI/ML</strong> TensorFlow, Keras, RAG</li>
-									<li class="style2"><span class="icon solid fa-robot"></span><strong>Agents</strong> CrewAI, LangChain, LLMs</li>
-									<li class="style3"><span class="icon solid fa-code"></span><strong>Backend</strong> Python, FastAPI, SQL</li>
-									<li class="style4"><span class="icon solid fa-database"></span><strong>Data</strong> NumPy, Pandas, Vector DBs</li>
+									<li class="style1"><span class="icon solid fa-shield-alt"></span><strong>Decision Intel</strong> MPT, Risk Modeling, SHAP</li>
+									<li class="style2"><span class="icon solid fa-robot"></span><strong>Agents & RAG</strong> CrewAI, LangChain, LLMs</li>
+									<li class="style3"><span class="icon solid fa-server"></span><strong>Architecture</strong> FastAPI, Docker, MLOps</li>
+									<li class="style4"><span class="icon solid fa-database"></span><strong>Data Engineering</strong> SQL, NumPy, Pandas</li>
 								</ul>
 							</section>
 
