@@ -11,8 +11,8 @@ Welcome to the repository powering my personal engineering portfolio hosted on *
 
 ## 👨‍💻 Professional Positioning
 
-> **BSc Computer Science Student | AI/ML & FinTech**  
-> *Credit Risk • Financial Data • Generative AI*
+> **AI Engineer | FinTech & Decision Intelligence**  
+> *Building explainable risk engines, autonomous agents, and production-grade financial AI.*
 
 I specialize in **Decision Intelligence**, bridging the gap between rigorous machine learning research and high-stakes production environments. My work focuses on:
 - **Credit Risk Modeling & RegTech**: Building explainable risk scoring engines compliant with financial frameworks (RBI Account Aggregator, DPDP).
@@ -28,18 +28,20 @@ I specialize in **Decision Intelligence**, bridging the gap between rigorous mac
 | **[CreditSense](https://github.com/AnasSayed27/CreditSense)** | FinTech / Credit Risk | Thin-file credit underwriting and risk scoring engine for the Indian financial ecosystem. Processes statement data via RBI Account Aggregator, dual-model XGBoost ensemble with SHAP explainability, and Dockerized FastAPI. | [GitHub](https://github.com/AnasSayed27/CreditSense) |
 | **[StockLens](https://github.com/AnasSayed27/stock-screener)** | Quantitative Finance / AI Agents | Fundamental analysis and stock screening engine for Indian equities (NSE). Evaluates stocks using an 11-criteria quality score and margin-of-safety valuation, with autonomous AI research agents for in-depth company synthesis. | [GitHub](https://github.com/AnasSayed27/stock-screener) |
 | **[Multi-Crop Plant Disease Detection](https://github.com/AnasSayed27/Multi-Crop_Plant_Disease_Detection)** | Computer Vision / AgriTech | Dual-Head Vision Transformer (ViT) platform classifying across 55 crop types and 175 disease types simultaneously from leaf photographs. Delivers treatment plans and automated PDF clinical reports via FastAPI. | [GitHub](https://github.com/AnasSayed27/Multi-Crop_Plant_Disease_Detection) |
-| **Career Funnel Optimizer** | Generative AI / ATS | AI-driven job fit analysis and resume tailoring platform. Extracts requirements from job postings, analyzes candidate qualification gaps, and tailors ATS-optimized resumes with structured validation using FastAPI and Next.js. | [GitHub Profile](https://github.com/AnasSayed27) |
+| **Career Funnel Optimizer** | Generative AI / ATS | AI-driven job fit analysis and resume tailoring platform. Extracts requirements from job postings, analyzes candidate qualification gaps, and tailors ATS-optimized resumes with structured validation using FastAPI and Next.js. | *In Development* |
 | **[GoalsApp](https://github.com/AnasSayed27/GoalsApp)** | Mobile Development / Productivity | Gamified productivity mobile application built with React Native and Expo. Implements a 12-week goal execution methodology with nested sub-goals, weekly tasks, GitHub-style consistency heatmaps, and dynamic ranking tiers. | [GitHub](https://github.com/AnasSayed27/GoalsApp) |
-| **[DevDocs AI](https://github.com/AnasSayed27/AI-ML-Portfolio/tree/main/DevDocs-AI-RAG-Chatbot)** | GenAI / Information Retrieval | RAG pipeline engineered from scratch without vector databases, using NumPy for cosine similarity vector search and retrieval with Hugging Face embeddings for context-aware developer Q&A. | [GitHub](https://github.com/AnasSayed27/AI-ML-Portfolio/tree/main/DevDocs-AI-RAG-Chatbot) |
 
 ---
 
-## 🛠️ Technical Arsenal
+## 🛠️ Engineered From Scratch (First Principles)
 
-- **Machine Learning & Risk Intelligence**: XGBoost, SHAP, Scikit-learn, PyTorch, TensorFlow, PyPortfolioOpt, Modern Portfolio Theory (MPT)
-- **Generative AI & Agentic Systems**: CrewAI, LangChain, Custom RAG (NumPy Vector Retrieval), Hugging Face Transformers, LLMs
-- **Data Engineering**: SQL, Pandas, NumPy, Data Pipeline Architecture
-- **Backend & Deployment**: FastAPI, Docker, Docker Compose, Pydantic, REST APIs, Streamlit, Next.js, React Native (Expo)
+| Project | Focus / Domain | First-Principles Implementation | Repository |
+|---|---|---|---|
+| **[DevDocs AI](https://github.com/AnasSayed27/AI-ML-Portfolio/tree/main/DevDocs-AI-RAG-Chatbot)** | GenAI / Information Retrieval | RAG retrieval layer built from scratch using pure NumPy cosine similarity and Hugging Face embeddings without external vector databases. | [GitHub](https://github.com/AnasSayed27/AI-ML-Portfolio/tree/main/DevDocs-AI-RAG-Chatbot) |
+| **[Enterprise Credit & Macro Engine](https://github.com/AnasSayed27/AI-Finance-Enterprise)** | Credit Risk / RegTech | Parsimonious 5-feature XGBoost model with SHAP explainability, macro ETL (yfinance/fredapi), ADF time-series stationarity tests, and Dockerized FastAPI. | [GitHub](https://github.com/AnasSayed27/AI-Finance-Enterprise) |
+| **[SubSlash AI](https://github.com/AnasSayed27/AI-ML-Portfolio/tree/main/SubSlash-AI-Marketing-Agents)** | AI Agents / FinTech Marketing | 4-agent autonomous crew built with CrewAI and Google Gemini for market research, campaign strategy, and content generation. | [GitHub](https://github.com/AnasSayed27/AI-ML-Portfolio/tree/main/SubSlash-AI-Marketing-Agents) |
+| **[Telco Customer Churn](https://github.com/AnasSayed27/AI-ML-Portfolio/tree/main/ClassificationProject(CustomerChurnPred))** | Supervised Classification | Binary classification pipeline with extensive EDA, categorical encoding, feature scaling, and model threshold tuning optimized for high churn recall. | [GitHub](https://github.com/AnasSayed27/AI-ML-Portfolio/tree/main/ClassificationProject(CustomerChurnPred)) |
+| **[Used Car Price Regressor](https://github.com/AnasSayed27/AI-ML-Portfolio/tree/main/RegressionProject(CarPricePred))** | Supervised Regression | End-to-end regression modeling with custom feature engineering (car_age) and Random Forest Regressor capturing non-linear relationships ($R^2 = 0.69$). | [GitHub](https://github.com/AnasSayed27/AI-ML-Portfolio/tree/main/RegressionProject(CarPricePred)) |
 
 ---
 
