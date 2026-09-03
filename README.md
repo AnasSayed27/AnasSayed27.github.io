@@ -3,7 +3,7 @@
 [![Live Portfolio](https://img.shields.io/badge/Live_Portfolio-anassayed27.github.io-4f46e5?style=for-the-badge&logo=google-chrome&logoColor=white)](https://anassayed27.github.io)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-soberhuman-0077b5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/soberhuman)
 [![GitHub](https://img.shields.io/badge/GitHub-AnasSayed27-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/AnasSayed27)
-[![Email](https://img.shields.io/badge/Email-soberbeing78%40gmail.com-ea4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:soberbeing78@gmail.com)
+[![Email](https://img.shields.io/badge/Email-anas.sayed004%40gmail.com-ea4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:anas.sayed004@gmail.com)
 
 Welcome to the repository powering my personal engineering portfolio hosted on **GitHub Pages**: [anassayed27.github.io](https://anassayed27.github.io).
 
@@ -42,6 +42,15 @@ I specialize in **Decision Intelligence**, bridging the gap between rigorous mac
 | **[SubSlash AI](https://github.com/AnasSayed27/AI-ML-Portfolio/tree/main/SubSlash-AI-Marketing-Agents)** | AI Agents / FinTech Marketing | 4-agent autonomous crew built with CrewAI and Google Gemini for market research, campaign strategy, and content generation. | [GitHub](https://github.com/AnasSayed27/AI-ML-Portfolio/tree/main/SubSlash-AI-Marketing-Agents) |
 | **[Telco Customer Churn](https://github.com/AnasSayed27/AI-ML-Portfolio/tree/main/ClassificationProject(CustomerChurnPred))** | Supervised Classification | Binary classification pipeline with extensive EDA, categorical encoding, feature scaling, and model threshold tuning optimized for high churn recall. | [GitHub](https://github.com/AnasSayed27/AI-ML-Portfolio/tree/main/ClassificationProject(CustomerChurnPred)) |
 | **[Used Car Price Regressor](https://github.com/AnasSayed27/AI-ML-Portfolio/tree/main/RegressionProject(CarPricePred))** | Supervised Regression | End-to-end regression modeling with custom feature engineering (car_age) and Random Forest Regressor capturing non-linear relationships ($R^2 = 0.69$). | [GitHub](https://github.com/AnasSayed27/AI-ML-Portfolio/tree/main/RegressionProject(CarPricePred)) |
+
+---
+
+## 🛠️ Technical Arsenal
+
+- **Credit Risk & Financial Intelligence**: XGBoost, SHAP (Explainable AI), Risk Modeling, Scorecards, Modern Portfolio Theory (MPT)
+- **Generative AI & Autonomous Agents**: CrewAI, Multi-Agent Swarms, Custom RAG (NumPy Vector Retrieval), Hugging Face Embeddings, Google Gemini, LLMs
+- **Financial Data Engineering**: Macro ETL (yfinance, fredapi), Time-Series Validation (ADF Tests), Pandas, NumPy, SQL
+- **AI Engineering & Deployment**: FastAPI (<100ms REST APIs), Docker, Docker Compose, Microservices, Streamlit Dashboards, Next.js, React Native (Expo)
 
 ---
 
