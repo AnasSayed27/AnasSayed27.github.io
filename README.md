@@ -1,7 +1,7 @@
 # Anas Sayed — AI/ML & FinTech Portfolio
 
 [![Live Portfolio](https://img.shields.io/badge/Live_Portfolio-anassayed27.github.io-4f46e5?style=for-the-badge&logo=google-chrome&logoColor=white)](https://anassayed27.github.io)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-soberhuman-0077b5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/soberhuman)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-anassayed27-0077b5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/anassayed27)
 [![GitHub](https://img.shields.io/badge/GitHub-AnasSayed27-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/AnasSayed27)
 [![Email](https://img.shields.io/badge/Email-anas.sayed004%40gmail.com-ea4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:anas.sayed004@gmail.com)
 
@@ -18,6 +18,17 @@ I specialize in **Decision Intelligence**, bridging the gap between rigorous mac
 - **Credit Risk Modeling & RegTech**: Building explainable risk scoring engines compliant with financial frameworks (RBI Account Aggregator, DPDP).
 - **Autonomous Agent Swarms & GenAI**: Orchestrating multi-agent systems and custom RAG retrieval engines.
 - **Production-Grade MLOps**: Packaging models into containerized microservices with sub-100ms inference.
+
+---
+
+## 💼 Professional Experience
+
+### Machine Learning Engineer Trainee (OJT) — Klassroom Edutech
+*December 2025 – May 2026 | Mumbai, India*
+
+- Annotated and structured information from video-based sources into Excel and Google Sheets datasets for machine learning workflows.
+- Performed contextual analysis and inference to identify and populate structured data fields from unstructured video content.
+- Conducted quality verification and validation of annotated datasets while maintaining accuracy and meeting project deadlines during the On-the-Job Training program.
 
 ---
 
