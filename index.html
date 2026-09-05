@@ -231,19 +231,19 @@
             
             @media screen and (max-width: 736px) {
                 
-                /* 1. Smooth Scrolling & Landing Zone */
-                html {
-                    scroll-behavior: smooth;
-                    scroll-padding-top: 85px;
+                #header {
+                    margin-bottom: 25px !important;
                 }
 
-                /* 2. Unified Mobile Nav (Below Hero on Load) */
+                /* 1. Unified Mobile Nav (Sticky & Zero Layout Shift) */
                 #nav {
                     display: block !important;
-                    position: relative !important;
+                    position: -webkit-sticky !important;
+                    position: sticky !important;
+                    top: 0 !important;
                     width: 100% !important;
                     max-width: 100% !important;
-                    margin: 25px auto 0 auto !important;
+                    margin: 0 auto !important;
                     padding: 8px !important;
                     background: rgba(30, 20, 55, 0.85) !important;
                     backdrop-filter: blur(12px);
@@ -253,23 +253,22 @@
                     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25) !important;
                     cursor: default;
                     text-align: center;
-                    z-index: 1000;
+                    z-index: 10000 !important;
                     box-sizing: border-box;
+                    transition: background-color 0.2s ease, border-radius 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
                 }
 
                 #nav + #main {
                     padding-top: 2em !important;
                 }
 
-                /* 3. Sticky State on Scroll */
+                /* 2. Sticky State Styling on Scroll */
                 #nav.alt {
-                    position: fixed !important;
+                    position: -webkit-sticky !important;
+                    position: sticky !important;
                     top: 0 !important;
-                    left: 0 !important;
-                    width: 100% !important;
-                    max-width: 100% !important;
-                    margin: 0 !important;
-                    padding: 8px 10px !important;
+                    margin: 0 auto !important;
+                    padding: 8px !important;
                     border-radius: 0 !important;
                     border-left: none !important;
                     border-right: none !important;
@@ -279,10 +278,9 @@
                     backdrop-filter: blur(14px);
                     -webkit-backdrop-filter: blur(14px);
                     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4) !important;
-                    z-index: 10000 !important;
                 }
 
-                /* 4. 2-Row Segmented Grid (Zero Horizontal Scrolling) */
+                /* 3. 2-Row Segmented Grid (Zero Horizontal Scrolling) */
                 #nav ul {
                     display: grid !important;
                     grid-template-columns: repeat(3, 1fr) !important;
