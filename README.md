@@ -15,15 +15,15 @@ Welcome to the repository powering my personal engineering portfolio hosted on *
 > *Building explainable risk engines, autonomous agents, and production-grade financial AI.*
 
 I specialize in **Decision Intelligence**, bridging the gap between rigorous machine learning research and high-stakes production environments. My work focuses on:
-- **Credit Risk Modeling & RegTech**: Building explainable risk scoring engines compliant with financial frameworks (RBI Account Aggregator, DPDP).
+- **Credit Risk Modeling & RegTech**: Building explainable risk scoring engines with Account Aggregator integration and explainable AI (SHAP).
 - **Autonomous Agent Swarms & GenAI**: Orchestrating multi-agent systems and custom RAG retrieval engines.
-- **Production-Grade MLOps**: Packaging models into containerized microservices with sub-100ms inference.
+- **Production-Grade MLOps**: Packaging models into containerized microservices using Docker and FastAPI.
 
 ---
 
 ## 💼 Professional Experience
 
-### Machine Learning Engineer Trainee (OJT) — Klassroom Edutech
+### Machine Learning Engineer Trainee (OJT) — Fusion Klassroom Edutech Limited
 *December 2025 – May 2026 | Mumbai, India*
 
 - Annotated and structured information from video-based sources into Excel and Google Sheets datasets for machine learning workflows.
@@ -38,15 +38,15 @@ I specialize in **Decision Intelligence**, bridging the gap between rigorous mac
 |---|---|---|---|
 | **[CreditSense](https://github.com/AnasSayed27/CreditSense)** | FinTech / Credit Risk | Thin-file credit underwriting and risk scoring engine for the Indian financial ecosystem. Processes statement data via RBI Account Aggregator, dual-model XGBoost ensemble with SHAP explainability, and Dockerized FastAPI. | [GitHub](https://github.com/AnasSayed27/CreditSense) |
 | **[StockLens](https://github.com/AnasSayed27/stock-screener)** | Quantitative Finance / AI Agents | Fundamental analysis and stock screening engine for Indian equities (NSE). Evaluates stocks using an 11-criteria quality score and margin-of-safety valuation, with autonomous AI research agents for in-depth company synthesis. | [GitHub](https://github.com/AnasSayed27/stock-screener) |
-| **[Multi-Crop Plant Disease Detection](https://github.com/AnasSayed27/Multi-Crop_Plant_Disease_Detection)** | Computer Vision / AgriTech | Dual-Head Vision Transformer (ViT) platform classifying across 55 crop types and 175 disease types simultaneously from leaf photographs. Delivers treatment plans and automated PDF clinical reports via FastAPI. | [GitHub](https://github.com/AnasSayed27/Multi-Crop_Plant_Disease_Detection) |
+| **[Multi-Crop Plant Disease Detection](https://github.com/AnasSayed27/Multi-Crop_Plant_Disease_Detection)** | Computer Vision / AgriTech | Academic mini-project: Dual-Head Vision Transformer (ViT) platform classifying across 55 crop types and 175 disease types simultaneously from leaf photographs. Delivers treatment plans and automated PDF clinical reports via FastAPI. | [GitHub](https://github.com/AnasSayed27/Multi-Crop_Plant_Disease_Detection) |
 | **Career Funnel Optimizer** | Generative AI / ATS | AI-driven job fit analysis and resume tailoring platform. Extracts requirements from job postings, analyzes candidate qualification gaps, and tailors ATS-optimized resumes with structured validation using FastAPI and Next.js. | *In Development* |
 | **[GoalsApp](https://github.com/AnasSayed27/GoalsApp)** | Mobile Development / Productivity | Gamified productivity mobile application built with React Native and Expo. Implements a 12-week goal execution methodology with nested sub-goals, weekly tasks, GitHub-style consistency heatmaps, and dynamic ranking tiers. | [GitHub](https://github.com/AnasSayed27/GoalsApp) |
 
 ---
 
-## 🛠️ Engineered From Scratch (First Principles)
+## 🛠️ Engineered From Scratch
 
-| Project | Focus / Domain | First-Principles Implementation | Repository |
+| Project | Focus / Domain | End-to-End Implementation | Repository |
 |---|---|---|---|
 | **[DevDocs AI](https://github.com/AnasSayed27/AI-ML-Portfolio/tree/main/DevDocs-AI-RAG-Chatbot)** | GenAI / Information Retrieval | RAG retrieval layer built from scratch using pure NumPy cosine similarity and Hugging Face embeddings without external vector databases. | [GitHub](https://github.com/AnasSayed27/AI-ML-Portfolio/tree/main/DevDocs-AI-RAG-Chatbot) |
 | **[Enterprise Credit & Macro Engine](https://github.com/AnasSayed27/AI-Finance-Enterprise)** | Credit Risk / RegTech | Parsimonious 5-feature XGBoost model with SHAP explainability, macro ETL (yfinance/fredapi), ADF time-series stationarity tests, and Dockerized FastAPI. | [GitHub](https://github.com/AnasSayed27/AI-Finance-Enterprise) |
@@ -61,7 +61,7 @@ I specialize in **Decision Intelligence**, bridging the gap between rigorous mac
 - **Credit Risk & Financial Intelligence**: XGBoost, SHAP (Explainable AI), Risk Modeling, Scorecards, Modern Portfolio Theory (MPT)
 - **Generative AI & Autonomous Agents**: CrewAI, Multi-Agent Swarms, Custom RAG (NumPy Vector Retrieval), Hugging Face Embeddings, Google Gemini, LLMs
 - **Financial Data Engineering**: Macro ETL (yfinance, fredapi), Time-Series Validation (ADF Tests), Pandas, NumPy, SQL
-- **AI Engineering & Deployment**: FastAPI (<100ms REST APIs), Docker, Docker Compose, Microservices, Streamlit Dashboards, Next.js, React Native (Expo)
+- **AI Engineering & Deployment**: FastAPI (High-Performance REST APIs), Docker, Docker Compose, Microservices, Streamlit Dashboards, Next.js, React Native (Expo)
 
 ---
 
